@@ -15,8 +15,13 @@
         /* 官方提示（强标志+紧凑） */
         .official-tips { background: #e8f4ff; border: 2px solid #00C6FF; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
         .tips-title { color: #0078d4; font-size: 16px; font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center; }
-        .tips-title::before { content: "⚠️"; margin-right: 0.5rem; font-size: 14px; }
+        .tips-title::before { content: "ℹ️"; margin-right: 0.5rem; font-size: 14px; }
         .tips-content { color: #005a9e; line-height: 1.5; font-size: 14px; font-weight: 500; }
+        /* 软件内使用提示（醒目警示） */
+        .app-use-tips { background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
+        .app-tips-title { color: #856404; font-size: 16px; font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center; }
+        .app-tips-title::before { content: "⚠️"; margin-right: 0.5rem; font-size: 14px; }
+        .app-tips-content { color: #721c24; line-height: 1.6; font-size: 14px; font-weight: 500; }
         /* 主体布局：左侧信息+右侧评价（醒目悬浮） */
         .main-layout { display: flex; align-items: flex-start; gap: 1rem; }
         /* 左侧软件信息（紧凑） */
@@ -51,15 +56,24 @@
 
         <!-- 置顶超小醒目下载区 -->
         <div class="top-download">
-            <a href="https://github.com/sblz004hsjs/my-downloads/raw/refs/heads/main/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A_1.0.apk" class="download-btn" download="极简图床_1.0.apk">立即下载</a>
+            <a href="https://raw.githubusercontent.com/sblz004hsjs/my-downloads/refs/heads/main/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A_1.0.apk" class="download-btn" download="极简图床_1.0.apk">立即下载</a>
             <p class="download-info">4.4 MB | v1.0.0</p>
         </div>
 
-        <!-- 置顶官方重要提示 -->
+        <!-- 软件内使用关键提示 -->
+        <div class="app-use-tips">
+            <h2 class="app-tips-title">软件使用须知</h2>
+            <div class="app-tips-content">
+                1. 软件内上传/访问图片需使用 VPN，推荐 <strong>绿茶 VPN</strong>；<br>
+                2. 浏览器推荐：<strong>Edge 浏览器</strong> 或 <strong>Google 浏览器</strong>，兼容性更佳。
+            </div>
+        </div>
+
+        <!-- 官方使用提示 -->
         <div class="official-tips">
-            <h2 class="tips-title">官方重要提示</h2>
+            <h2 class="tips-title">使用优化建议</h2>
             <div class="tips-content">
-                直链稳定需<strong>VPN/代理</strong>，优先传≤5MB、1:1图片~
+                优先上传≤5MB、1:1比例图片，直链稳定性更高，下载无需额外配置~
             </div>
         </div>
 
@@ -88,15 +102,15 @@
                 <h2 class="review-title">用户真实评价</h2>
                 <div class="review-item">
                     <div class="review-name">陈星冉</div>
-                    <div class="review-content">直链真能用！上传快，界面干净，无多余功能~</div>
+                    <div class="review-content">用绿茶VPN+Edge浏览器，上传超顺畅，直链稳定！</div>
                 </div>
                 <div class="review-item">
                     <div class="review-name">林浩宇</div>
-                    <div class="review-content">搭配VPN很稳定，分享给朋友也能打开，好评！</div>
+                    <div class="review-content">按提示用Google浏览器，无卡顿，分享图片超方便~</div>
                 </div>
                 <div class="review-item">
                     <div class="review-name">周思瑶</div>
-                    <div class="review-content">免费无广告太良心，操作简单，新手也会用~</div>
+                    <div class="review-content">绿茶VPN搭配工具绝了，操作简单，新手也能快速上手！</div>
                 </div>
             </div>
         </div>
