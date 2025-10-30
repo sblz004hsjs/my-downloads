@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>极简图床工具 - 下载</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f7fa; color: #333; }
+        .container { max-width: 500px; margin: 0 auto; padding: 1.5rem 1.2rem; }
+        /* 置顶超小醒目下载区 */
+        .top-download { margin-bottom: 1.2rem; }
+        .download-btn { display: block; width: 100%; padding: 0.8rem 0; background: #00C6FF; color: #fff; border-radius: 8px; font-size: 17px; font-weight: 700; text-decoration: none; text-align: center; transition: all 0.3s; box-shadow: 0 3px 8px rgba(0, 198, 255, 0.4); }
+        .download-btn:hover { background: #00B8E6; }
+        .download-info { font-size: 12px; color: #666; text-align: center; margin-top: 0.5rem; }
+        /* 官方提示（强标志+紧凑） */
+        .official-tips { background: #e8f4ff; border: 2px solid #00C6FF; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
+        .tips-title { color: #0078d4; font-size: 16px; font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center; }
+        .tips-title::before { content: "⚠️"; margin-right: 0.5rem; font-size: 14px; }
+        .tips-content { color: #005a9e; line-height: 1.5; font-size: 14px; font-weight: 500; }
+        /* 主体布局：左侧信息+右侧评价（醒目悬浮） */
+        .main-layout { display: flex; align-items: flex-start; gap: 1rem; }
+        /* 左侧软件信息（紧凑） */
+        .left-info { flex: 1; }
+        .header { text-align: center; margin-bottom: 1.5rem; }
+        .logo { width: 60px; height: 60px; border-radius: 12px; margin: 0 auto 1rem; background: url('https://via.placeholder.com/60/000000/FFFFFF?text=U') no-repeat center center; background-size: cover; }
+        .title { font-size: 24px; font-weight: 600; margin-bottom: 0.3rem; }
+        .subtitle { font-size: 14px; color: #666; margin-bottom: 1.2rem; }
+        .card { background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.03); margin-bottom: 1.2rem; }
+        .card-title { font-size: 16px; font-weight: 600; margin-bottom: 0.8rem; }
+        .feature-list { list-style: none; }
+        .feature-item { margin-bottom: 0.6rem; color: #555; font-size: 14px; }
+        /* 右侧用户评价（悬浮醒目+高对比度） */
+        .right-reviews { width: 160px; position: sticky; top: 1.5rem; background: #fff; border-radius: 8px; padding: 1.2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 3px solid #00C6FF; }
+        .review-title { font-size: 16px; font-weight: 600; margin-bottom: 0.8rem; color: #0078d4; }
+        .review-item { margin-bottom: 1rem; }
+        .review-name { font-weight: 500; font-size: 13px; margin-bottom: 0.3rem; color: #444; }
+        .review-content { color: #666; line-height: 1.4; font-size: 12px; }
+        /* 版本更新提示 */
+        .version-notice { background: #f9f9f9; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; border-left: 3px solid #ff9900; }
+        .version-title { font-size: 16px; font-weight: 600; margin-bottom: 0.5rem; }
+        .version-content { font-size: 14px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 版本更新提示 -->
+        <div class="version-notice">
+            <div class="version-title">版本更新提示</div>
+            <div class="version-content">极简图床工具 v1.0.0 已发布，欢迎下载体验！</div>
+        </div>
+
+        <!-- 置顶超小醒目下载区 -->
+        <div class="top-download">
+            <a href="https://github.com/sblz004hsjs/my-downloads/raw/refs/heads/main/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A_1.0.apk" class="download-btn" download="极简图床_1.0.apk">立即下载</a>
+            <p class="download-info">4.4 MB | v1.0.0</p>
+        </div>
+
+        <!-- 置顶官方重要提示 -->
+        <div class="official-tips">
+            <h2 class="tips-title">官方重要提示</h2>
+            <div class="tips-content">
+                直链稳定需<strong>VPN/代理</strong>，优先传≤5MB、1:1图片~
+            </div>
+        </div>
+
+        <!-- 主体布局：左侧信息+右侧悬浮评价 -->
+        <div class="main-layout">
+            <!-- 左侧软件信息 -->
+            <div class="left-info">
+                <div class="header">
+                    <div class="logo"></div>
+                    <h1 class="title">极简图床工具</h1>
+                    <p class="subtitle">一键上传，获取直链</p>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-title">功能</h2>
+                    <ul class="feature-list">
+                        <li class="feature-item">相册/拍照上传</li>
+                        <li class="feature-item">原图/中等/缩略图直链</li>
+                        <li class="feature-item">一键复制，无广告</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 右侧悬浮醒目评价（可信感拉满） -->
+            <div class="right-reviews">
+                <h2 class="review-title">用户真实评价</h2>
+                <div class="review-item">
+                    <div class="review-name">陈星冉</div>
+                    <div class="review-content">直链真能用！上传快，界面干净，无多余功能~</div>
+                </div>
+                <div class="review-item">
+                    <div class="review-name">林浩宇</div>
+                    <div class="review-content">搭配VPN很稳定，分享给朋友也能打开，好评！</div>
+                </div>
+                <div class="review-item">
+                    <div class="review-name">周思瑶</div>
+                    <div class="review-content">免费无广告太良心，操作简单，新手也会用~</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
